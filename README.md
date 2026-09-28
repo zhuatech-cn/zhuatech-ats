@@ -1,5 +1,7 @@
 # ZhuaTech Ats｜知华科技招聘管理 ATS
 
+[简体中文](README.md) | [English](README.en.md)
+
 > 从招聘需求到入职交接，建立可衡量的人才获取流程
 
 [![Java 21](https://img.shields.io/badge/Java-21-1d6b5c)](backend/pom.xml)
