@@ -1,0 +1,58 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "requiredMinutes": "#720",
+      "availableMinutes": "#720",
+      "candidateCapacity": "#12"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "candidates": "13"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "shortfallMinutes": "#60"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "interviewers": "0"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "candidateCapacity": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "rounds": "0"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "candidates": "0"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "minutesAvailable": "239"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "candidateCapacity": "#11"
+    },
+    "error": false
+  }
+]

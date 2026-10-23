@@ -1,0 +1,88 @@
+{
+  "slug": "ats",
+  "title": "面试轮次与面试官容量测算",
+  "fields": [
+    {
+      "key": "id",
+      "label": "记录编号",
+      "type": "ID"
+    },
+    {
+      "key": "candidates",
+      "label": "候选人数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "rounds",
+      "label": "每人面试轮次",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "1",
+      "max": "20"
+    },
+    {
+      "key": "minutesPerRound",
+      "label": "单轮分钟",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "1",
+      "max": "480"
+    },
+    {
+      "key": "interviewers",
+      "label": "面试官人数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "10000"
+    },
+    {
+      "key": "minutesAvailable",
+      "label": "每人可用分钟",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "10080"
+    }
+  ],
+  "columns": [
+    {
+      "key": "requiredMinutes",
+      "label": "需要面试官分钟"
+    },
+    {
+      "key": "availableMinutes",
+      "label": "可用面试官分钟"
+    },
+    {
+      "key": "candidateCapacity",
+      "label": "可承接人数"
+    },
+    {
+      "key": "shortfallMinutes",
+      "label": "缺口分钟"
+    }
+  ],
+  "description": "按候选人数、轮次、单轮时长及面试官可用时间计算排期容量和缺口，不对候选人进行自动录用或淘汰。",
+  "owner": "上海如静知华信息科技有限公司",
+  "website": "https://www.zhuatech.cn/",
+  "authorization": "商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。",
+  "version": 1,
+  "notes": "输入均须为已获授权的同口径数据。金额固定人民币元；比例为百分数。核算结果只用于复核，未审批、未写库、未发起外部调用，也未触发付款、签名、资料销毁或设备控制。建议不构成法律、安全、会计或碳核证结论。",
+  "sample": {
+    "asOf": "2026-10-23",
+    "records": [
+      {
+        "id": "ITEM-001",
+        "candidates": "12",
+        "rounds": "2",
+        "minutesPerRound": "30",
+        "interviewers": "3",
+        "minutesAvailable": "240"
+      }
+    ]
+  }
+}
